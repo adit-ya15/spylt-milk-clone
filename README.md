@@ -23,4 +23,4 @@ The goal is to replicate the look, feel, and functionality of the original site 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/spylt-clone.git
+   git clone https://github.com/adit-ya15/spylt-milk-clone.git
