@@ -14,7 +14,7 @@ The goal is to replicate the look, feel, and functionality of the original site 
 ---
 
 ## 🛠️ Tech Stack
-- **HTML5**, **CSS3**, **JavaScript**  
+- **HTML5**, **CSS3**, **JavaScript** , **React**, **GSAP**
 - (Optional: add frameworks/libraries you used like React, Next.js, Tailwind CSS, Bootstrap, etc.)  
 
 ---
