@@ -11,7 +11,7 @@ import NutritionSection from "./sections/NutritionSection";
 import BenefitSection from "./sections/BenefitSection";
 import TestimonilaSection from "./sections/TestimonilaSection";
 import FooterSection from "./sections/FooterSection";
-import Loader from "./components/loader";
+
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
