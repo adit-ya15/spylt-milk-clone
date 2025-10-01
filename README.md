@@ -4,8 +4,8 @@ This project is a clone of the [Spylt](https://www.spylt.com/) website, built fo
 The goal is to replicate the look, feel, and functionality of the original site while improving skills in web development and version control with Git.
 
 ---
-# Visit to See What I Have Made
-[click to visit](spylt-milk-clone.netlify.app)
+# Click to see my verion
+[click to visit](https://spylt-milk-clone.netlify.app/)
 
 ## 🚀 Features
 - Responsive design similar to the original Spylt website  
