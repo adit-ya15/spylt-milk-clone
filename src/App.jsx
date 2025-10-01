@@ -13,7 +13,7 @@ import BenefitSection from "./sections/BenefitSection";
 import TestimonilaSection from "./sections/TestimonilaSection";
 import FooterSection from "./sections/FooterSection";
 
-import Loader from "./components/loader";
+import Loader from "./components/Loader";
 
 
 
