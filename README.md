@@ -4,6 +4,8 @@ This project is a clone of the [Spylt](https://www.spylt.com/) website, built fo
 The goal is to replicate the look, feel, and functionality of the original site while improving skills in web development and version control with Git.
 
 ---
+# Visit to See What I Have Made
+[click to visit](spylt-milk-clone.netlify.app)
 
 ## 🚀 Features
 - Responsive design similar to the original Spylt website  
@@ -14,7 +16,7 @@ The goal is to replicate the look, feel, and functionality of the original site 
 ---
 
 ## 🛠️ Tech Stack
-- **HTML5**, **CSS3**, **JavaScript**  
+- **HTML5**, **CSS3**, **JavaScript** , **React**, **GSAP**
 - (Optional: add frameworks/libraries you used like React, Next.js, Tailwind CSS, Bootstrap, etc.)  
 
 ---
@@ -23,4 +25,4 @@ The goal is to replicate the look, feel, and functionality of the original site 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/spylt-clone.git
+   git clone https://github.com/adit-ya15/spylt-milk-clone.git
