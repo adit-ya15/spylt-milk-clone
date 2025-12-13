@@ -1,28 +1,58 @@
-# Spylt Clone
+# Spylt Milk – Animated Brand Website
 
-This project is a clone of the [Spylt](https://www.spylt.com/) website, built for learning and practice purposes.  
-The goal is to replicate the look, feel, and functionality of the original site while improving skills in web development and version control with Git.
+A modern, animation-heavy brand website inspired by Spylt, showcasing advanced frontend animations, smooth scroll interactions, and clean UI composition.
 
----
-# Click to see my verion
-[click to visit](https://spylt-milk-clone.netlify.app/)
+## 🚀 Live Demo
+https://spylt-milk-clone.netlify.app/
 
-## 🚀 Features
-- Responsive design similar to the original Spylt website  
-- Modern UI components and layouts  
-- Built with clean, reusable code  
-- Optimized for desktop and mobile  
+## 🧠 Why this project?
+Modern product and agency websites rely heavily on motion design and scroll-based storytelling.  
+This project focuses on **visual polish, performance-friendly animations, and component structure**, not just static UI.
 
----
+## 🛠 Tech Stack
+- React.js
+- Tailwind CSS
+- GSAP
+- GSAP ScrollTrigger
 
-## 🛠️ Tech Stack
-- **HTML5**, **CSS3**, **JavaScript** , **React**, **GSAP**
-- (Optional: add frameworks/libraries you used like React, Next.js, Tailwind CSS, Bootstrap, etc.)  
+## ✨ Key Features
+- Smooth scroll-based animations
+- Advanced GSAP timelines
+- ScrollTrigger-based section transitions
+- Clip-path and motion effects
+- Fully responsive layout
+- Clean component structure
 
----
+## ⚙️ Performance Considerations
+- Optimized animation triggers
+- Minimal re-renders
+- Lightweight component hierarchy
 
-## 📂 Project Setup
+## 📂 Project Structure
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/adit-ya15/spylt-milk-clone.git
+```text
+src/
+├── components/
+├── sections/
+├── hooks/
+├── styles/
+└── utils/
+```
+
+## 🧪 Testing
+Not included (UI-focused project)
+
+## 📌 Learnings
+- Advanced GSAP usage in React
+- Scroll-based animation orchestration
+- Animation performance optimization
+- Structuring large UI-focused React apps
+
+## 📸 Preview
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3d3d1b54-53ae-46bf-83f2-d75c7eb5e9ab" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d1b21fa6-8d50-47d9-a084-7cdec308ffff" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/09c51a90-9987-4c57-a135-e5bd2795a5ee" />
+
+
+## 📄 License
+This project is for learning and demonstration purposes.
