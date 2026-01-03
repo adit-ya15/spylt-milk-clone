@@ -1,7 +1,13 @@
 # Spylt Milk – Animated Brand Website
 
-A modern, animation-heavy brand website inspired by Spylt, showcasing advanced frontend animations, smooth scroll interactions, and clean UI composition.
+A modern, animation-heavy brand website inspired by Spylt, showcasing production-grade frontend animations, smooth scroll interactions, and clean UI composition.
 
+## TL;DR
+- Animation-heavy brand website inspired by Spylt
+- Built with React + GSAP + ScrollTrigger
+- Focused on motion design and scroll storytelling
+- Fully responsive and performance-optimized
+  
 ## 🚀 Live Demo
 https://spylt-milk-clone.netlify.app/
 
@@ -48,7 +54,7 @@ Not included (UI-focused project)
 - Animation performance optimization
 - Structuring large UI-focused React apps
 
-## 📸 Preview
+## 📸 Screenshots
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3d3d1b54-53ae-46bf-83f2-d75c7eb5e9ab" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d1b21fa6-8d50-47d9-a084-7cdec308ffff" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/09c51a90-9987-4c57-a135-e5bd2795a5ee" />
