@@ -1,12 +1,14 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import CustomEase from "gsap/CustomEase";
 
 gsap.registerPlugin(CustomEase);
 
-const Loader = ({ onComplete }) => {
+const Loader = ({ onComplete, isVideoLoaded, onExitStart }) => {
   const numberRef = useRef(null);
   const progressRef = useRef(null);
+  const containerRef = useRef(null);
+  const [animationDone, setAnimationDone] = useState(false);
 
   useEffect(() => {
     let customEase =
@@ -22,10 +24,10 @@ const Loader = ({ onComplete }) => {
     }
     sessionStorage.setItem("visited", "true");
 
-    // GSAP timeline
+    // Loading Animation Timeline
     const tl = gsap.timeline({
       onComplete: () => {
-        if (onComplete) onComplete(); // notify parent (App.jsx)
+        setAnimationDone(true);
       },
     });
 
@@ -49,10 +51,31 @@ const Loader = ({ onComplete }) => {
       },
       0
     );
-  }, [onComplete]);
+  }, []);
+
+  // Exit Animation Trigger
+  useEffect(() => {
+    // Only exit if animation is finished AND video is loaded
+    if (animationDone && isVideoLoaded) {
+      if (onExitStart) onExitStart(); // Trigger video start
+
+      const exitTl = gsap.timeline({
+        onComplete: () => {
+          if (onComplete) onComplete();
+        },
+      });
+
+      exitTl.to(containerRef.current, {
+        opacity: 0,
+        duration: 0.8,
+        ease: "power2.inOut",
+      });
+    }
+  }, [animationDone, isVideoLoaded, onComplete, onExitStart]);
 
   return (
     <div
+      ref={containerRef}
       style={{
         position: "fixed",
         top: 0,

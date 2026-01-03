@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -15,47 +15,53 @@ import FooterSection from "./sections/FooterSection";
 
 import Loader from "./components/Loader";
 
-
-
-
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isVideoLoaded, setVideoLoaded] = useState(false);
+  const [startVideo, setStartVideo] = useState(false);
 
   useGSAP(() => {
-    if (!loading) {
+    if (!isLoading) {
       ScrollSmoother.create({
         smooth: 3,
         effects: true,
       });
     }
-  }, [loading]);
+  }, [isLoading]);
 
   return (
     <>
-      {loading ? (
-        <Loader onComplete={() => setLoading(false)} />
-      ) : (
-        <main>
-          <NavBar />
-          <div id="smooth-wrapper">
-            <div id="smooth-content">
-              <HeroSection />
-              <MessageSection />
-              <FlavourSection />
-              <NutritionSection />
-
-              <div>
-                <BenefitSection />
-                <TestimonilaSection />
-              </div>
-
-              <FooterSection />
-            </div>
-          </div>
-        </main>
+      {isLoading && (
+        <Loader
+          isVideoLoaded={isVideoLoaded}
+          onExitStart={() => setStartVideo(true)}
+          onComplete={() => setIsLoading(false)}
+        />
       )}
+
+      <main>
+        <NavBar />
+        <div id="smooth-wrapper">
+          <div id="smooth-content">
+            <HeroSection
+              setVideoLoaded={setVideoLoaded}
+              startVideo={startVideo}
+            />
+            <MessageSection />
+            <FlavourSection />
+            <NutritionSection />
+
+            <div>
+              <BenefitSection />
+              <TestimonilaSection />
+            </div>
+
+            <FooterSection />
+          </div>
+        </div>
+      </main>
     </>
   );
 };
